@@ -1,6 +1,6 @@
 ﻿namespace Buddy.Forms.Enums;
 
-public enum SelectQuestionDssplayType
+public enum SelectQuestionDisplayType
 {
     Radio,
     Checkbox,

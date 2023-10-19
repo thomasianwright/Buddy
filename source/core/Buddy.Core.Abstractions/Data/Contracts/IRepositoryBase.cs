@@ -1,8 +1,7 @@
 ﻿using System.Linq.Expressions;
-using Buddy.Core.Abstractions.Data.Contracts;
 using FluentResults;
 
-namespace Buddy.Infrastructure.EntityFramework.Contracts;
+namespace Buddy.Data.Contracts;
 
 public interface IRepositoryBase<TEntity, TKey> where TEntity : class, IEntityBase<TKey> where TKey : struct
 {

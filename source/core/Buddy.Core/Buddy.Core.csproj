@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Buddy</RootNamespace>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Forms\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Buddy.Core.Abstractions\Buddy.Core.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

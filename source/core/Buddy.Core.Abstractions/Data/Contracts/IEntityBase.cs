@@ -1,6 +1,9 @@
-﻿namespace Buddy.Core.Abstractions.Data.Contracts;
+﻿namespace Buddy.Data.Contracts;
 
-public interface IEntityBase
+public interface IEntityBase<TKey> where TKey : struct
 {
+    TKey Id { get; set; }
     
+    DateTimeOffset CreatedAt { get; set; }
+    DateTimeOffset UpdatedAt { get; set; }
 }
