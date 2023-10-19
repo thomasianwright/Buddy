@@ -1,8 +1,10 @@
 ﻿namespace Buddy.Forms.Commands;
 
-public class CreateQuestionCommandCommand : ICreateQuestionCommand
+public class CreateTextQuestionCommand : ICreateQuestionCommand
 {
     public Guid? CreatedById { get; set; }
+    public Guid SurveyId { get; set; }
+    public int PageNumber { get; set; }
     public string DisplayText { get; set; } = null!;
     public string VariableName { get; set; } = null!;
 

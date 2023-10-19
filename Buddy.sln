@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		READMD.md = READMD.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buddy.Features.Identity", "source\features\Buddy.Features.Identity\Buddy.Features.Identity.csproj", "{AB9086F5-3471-46FB-BEFC-6798F78E6343}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,7 @@ Global
 		{F721B9A0-06D5-4EFA-A8D2-14BDF63DE7BF} = {B78D4A84-F232-42C0-A3E0-7592958B3C0B}
 		{02004241-9D3E-4A58-8078-CE5167429779} = {B78D4A84-F232-42C0-A3E0-7592958B3C0B}
 		{91066C2B-2E2C-4676-97BB-9A8AD7B9F33D} = {794168A2-E6DA-46A0-971A-77CFFDF000FC}
+		{AB9086F5-3471-46FB-BEFC-6798F78E6343} = {B78D4A84-F232-42C0-A3E0-7592958B3C0B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3DB23714-88DB-4FBE-81FF-8573DF67D0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,5 +63,9 @@ Global
 		{91066C2B-2E2C-4676-97BB-9A8AD7B9F33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91066C2B-2E2C-4676-97BB-9A8AD7B9F33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91066C2B-2E2C-4676-97BB-9A8AD7B9F33D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9086F5-3471-46FB-BEFC-6798F78E6343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9086F5-3471-46FB-BEFC-6798F78E6343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9086F5-3471-46FB-BEFC-6798F78E6343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9086F5-3471-46FB-BEFC-6798F78E6343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

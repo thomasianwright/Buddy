@@ -1,12 +1,16 @@
 ﻿namespace Buddy.Forms.Commands;
 
-public class CreateNumberQuestionCommand
+public class CreateNumberQuestionCommand : ICreateQuestionCommand
 {
-    public int? MinLength { get; set; }
-    public int? MaxLength { get; set; }
-    public string? Regex { get; set; }
-
-    public string? MinLengthErrorMessage { get; set; }
-    public string? MaxLengthErrorMessage { get; set; }
-    public string? RegexErrorMessage { get; set; }
+    public decimal? MaxValue { get; set; }
+    public decimal? MinValue { get; set; }
+    
+    public string? MaxValueErrorMessage { get; set; }
+    public string? MinValueErrorMessage { get; set; }
+    
+    public Guid? CreatedById { get; set; }
+    public Guid SurveyId { get; set; }
+    public int PageNumber { get; set; }
+    public string DisplayText { get; set; }
+    public string VariableName { get; set; }
 }

@@ -8,7 +8,9 @@ public class CreateSelectQuestionCommandCommand : ICreateQuestionCommand
     public int MaxSelection { get; set; } = 1;
 
     public Guid? CreatedById { get; set; }
-    
+    public Guid SurveyId { get; set; }
+    public int PageNumber { get; set; }
+
     public string DisplayText { get; set; } = null!;
     public string VariableName { get; set; } = null!;
 }

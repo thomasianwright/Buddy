@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\core\Buddy.Core.Abstractions\Buddy.Core.Abstractions.csproj" />
+    </ItemGroup>
+
 </Project>

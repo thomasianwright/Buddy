@@ -14,5 +14,15 @@ public class SurveyQuestionEntityTypeConfiguration : IEntityTypeConfiguration<Su
         builder.ToTable(TableName);
 
         builder.UseTptMappingStrategy();
+
+        builder.HasKey(x => x.Id);
+
+        builder.HasIndex(x => new { x.SurveyFormId, x.VariableName })
+            .IsUnique();
+
+        builder
+            .HasOne(x => x.SurveyForm)
+            .WithMany(x => x.Questions)
+            .HasForeignKey(x => x.SurveyFormId);
     }
 }
