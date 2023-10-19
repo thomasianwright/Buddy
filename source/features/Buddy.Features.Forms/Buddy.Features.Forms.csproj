@@ -10,7 +10,10 @@
     <ItemGroup>
       <ProjectReference Include="..\..\core\Buddy.Core.Abstractions\Buddy.Core.Abstractions.csproj" />
       <ProjectReference Include="..\..\core\Buddy.Core\Buddy.Core.csproj" />
+      <ProjectReference Include="..\..\infrastructure\Buddy.Infrastructure.EntityFramework\Buddy.Infrastructure.EntityFramework.csproj" />
     </ItemGroup>
+
+
 
 
 
