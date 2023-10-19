@@ -1,0 +1,30 @@
+﻿@using Buddy.Forms.Dtos.Questions
+
+<MudCard>
+    <MudCardContent>
+        <MudGrid>
+            <MudItem xs="6">
+                <MudInput T="int" Label="Min Length" bind-Value="@TestQuestionDto.MinLength"></MudInput>
+                <MudInput T="string" Label="Min Length Error Message" bind-Value="@TestQuestionDto.MinLengthErrorMessage"></MudInput>
+
+                <MudInput T="int" bind-Value="@TestQuestionDto.MaxLength" Label="Max Length"></MudInput>
+                <MudInput T="string" Label="Max Length Error Message" bind-Value="@TestQuestionDto.MaxLengthErrorMessage"></MudInput>
+            </MudItem>
+            <MudItem xs="6">
+                <MudInput T="string" Label="Regex Expression" bind-Value="@TestQuestionDto.Regex"></MudInput>
+                <MudInput T="string" Label="Min Length Error Message" bind-Value="@TestQuestionDto.RegexErrorMessage"></MudInput>
+            </MudItem>
+        </MudGrid>
+    </MudCardContent>
+</MudCard>
+
+@code {
+
+    public TextQuestionDto TestQuestionDto { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+}

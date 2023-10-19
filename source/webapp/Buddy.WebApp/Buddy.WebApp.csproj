@@ -25,4 +25,9 @@
       <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\core\Buddy.Core.Abstractions\Buddy.Core.Abstractions.csproj" />
+      <ProjectReference Include="..\..\core\Buddy.Core\Buddy.Core.csproj" />
+    </ItemGroup>
+
 </Project>
