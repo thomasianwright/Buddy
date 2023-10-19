@@ -12,7 +12,7 @@ public interface IRepositoryBase<TEntity, TKey> where TEntity : class, IEntityBa
     
     ValueTask<Result<TEntity>> AddAsync(TEntity entity, CancellationToken cancellationToken = default);
 
-    ValueTask<Result<IEnumerable<TEntity>>> AddRangeAsync(IEnumerable<TEntity> entities,
+    ValueTask<Result> AddRangeAsync(IEnumerable<TEntity> entities,
         CancellationToken cancellationToken = default);
     
     ValueTask<Result> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default);
